@@ -1,2 +1,5 @@
 # lcdgram-esp32
-An LCD controller for the ESP32 using a Telegram bot.
+
+## Demo
+
+[![Demo video on YouTube.](https://img.youtube.com/vi/MZYB17NEYmU/0.jpg)](https://www.youtube.com/watch?v=MZYB17NEYmU)
