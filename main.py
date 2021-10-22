@@ -1,3 +1,15 @@
+# lcdgram
+# =======
+#
+# Author: Farris Essam
+# https://github.com/dimeritium-foil/lcdgram-esp32
+#
+# Libraries used:
+# - python_lcd: https://github.com/dhylands/python_lcd
+# - telegram-upy: https://github.com/gabrielebarola/telegram-upy
+#
+# Many thanks to the creators of these projects.
+
 import sys
 import network
 import machine
@@ -13,6 +25,10 @@ from helpers import set_time, conv24h_12h, covid19
 
 from config import utelegram_config, wifi_config
 
+# telegram bot username
+bot_username = "@lcdgram_bot"
+
+# lcd dimensions
 lcd_lines = 2
 lcd_cols = 16
 
@@ -54,7 +70,7 @@ lcd.putstr("WiFi connected\nSetting up bot..")
 bot = Bot(utelegram_config["token"])
 
 lcd.clear()
-lcd.putstr("Done!" + " "*(lcd_cols - len("Done!")) + "@lcdgram_bot") # \n isn't working for some reason
+lcd.putstr("Done!" + " "*(lcd_cols - len("Done!")) + bot_username) # \n isn't working for some reason
 print("Bot is running...")
 
 # list of paired ids in the session
