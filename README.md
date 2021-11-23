@@ -27,3 +27,5 @@ continuously.
 the chosen country. If country is left empty it will display the global statistics. The data is
 updated regularly every 15 minutes, and is fetched from a reliable API (disease.sh).
 6. /clear: Clears the display.
+
+This was made for a college project.
